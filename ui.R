@@ -20,9 +20,8 @@ shinyUI(pageWithSidebar(
   mainPanel(
     tabsetPanel(      
       tabPanel("Overview",htmlOutput("overview")),
-      tabPanel("Events", 
-               htmlOutput("DataTable"),hr(),hr(),
-               plotOutput("eventPlot", height = 800))
+      tabPanel("Events", htmlOutput("DataTable"),hr()),
+      tabPanel("Location", plotOutput("eventPlot", height = 800),hr())
     )
   )
 ))

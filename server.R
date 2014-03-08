@@ -57,7 +57,7 @@ shinyServer(function(input, output) {
       p <- ggmap(map, extent = 'panel') + geom_point(data=event.df, 
                                    aes(y=LAT, x=LON, size=MEMBER,color = PAY),
                                    alpha = 0.7, position = "jitter") + 
-        ggtitle("Where are the events?\n") + Th
+        ggtitle("Where are the events?\n") + Th + scale_size(range = c(5, 10))
       print(p)
     } else {
       map <- get_map(input$city, zoom = 12, messaging = FALSE)
