@@ -19,7 +19,7 @@ for(page in 1:length(cityRoster)){
     
     record <- city200[[1]][i][[1]]
       
-    c.df[i+(page-1)*200,1] <- record$id
+    c.df[i+(page-1)*200,1] <- record$zip
     c.df[i+(page-1)*200,2] <- record$city
     c.df[i+(page-1)*200,3] <- record$state
     c.df[i+(page-1)*200,4] <- record$member_count
