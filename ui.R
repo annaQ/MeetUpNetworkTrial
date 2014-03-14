@@ -12,7 +12,7 @@ shinyUI(pageWithSidebar(
                 "Choose your state:", 
                 states),
     htmlOutput("cityUI"),
-    hr(),
+    br(),
     actionButton("run", "Get it!")
   ),
     
@@ -20,8 +20,8 @@ shinyUI(pageWithSidebar(
   mainPanel(
     tabsetPanel(      
       tabPanel("Overview",htmlOutput("overview")),
-      tabPanel("Events", htmlOutput("DataTable"),hr()),
-      tabPanel("Location", plotOutput("eventPlot", height = 800),hr())
+      tabPanel("Events", htmlOutput("DataTable")),
+      tabPanel("Location", plotOutput("eventPlot", height = 800))
     )
   )
 ))
