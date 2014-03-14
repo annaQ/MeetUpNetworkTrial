@@ -71,7 +71,7 @@ shinyServer(function(input, output) {
 
 #This is used to update the event dataframe based on the city selected
 getEventDF <-function(zip){
-  url = paste("https://api.meetup.com/2/open_events?&sign=true&zip=",
+  url = paste("https://api.meetup.com/2/open_events?sign=true&zip=",
               zip,
               "&page=200&radius=10&key=452167153b2b67443e325d7a1b42343",
               sep = "")
