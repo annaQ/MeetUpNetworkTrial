@@ -4,7 +4,7 @@ states <- names(table(c.df$STATE))
 shinyUI(pageWithSidebar(
   
   # Application title
-  headerPanel("Meet Ups in your city"),
+  headerPanel("What's up in town?"),
   
   # Sidebar with a slider input for number of observations
   sidebarPanel(
